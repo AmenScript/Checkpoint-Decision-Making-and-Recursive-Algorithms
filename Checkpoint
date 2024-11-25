@@ -6,15 +6,15 @@ function isLeapYear(year) {
     if (year % 4 === 0) {
         if (year % 100 === 0) {
             if (year % 400 === 0) {
-                return true;
+                return true
             } else {
-                return false;
+                return false
             }
         } else {
-            return true;
+            return true
         }
     } else {
-        return false;
+        return false
     }
 }
 
@@ -22,11 +22,11 @@ function isLeapYear(year) {
 
 function getTicketPrice(age) {
     if (age <= 12) {
-        return 10;
+        return 10
     } else if (age >= 13 && age <= 17) {
-        return 15;
+        return 15
     } else {
-        return 20;
+        return 20
     }
 }
 
@@ -36,24 +36,24 @@ function getTicketPrice(age) {
 
 function fibonacci(n) {
     if (n <= 0) {
-        return 0;
+        return 0
     } else if (n === 1) {
-        return 1;
+        return 1
     } else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        return fibonacci(n - 1) + fibonacci(n - 2)
     }
 }
 
 2- Palindrome Checker:
 
   function isPalindrome(s) {
-    s = s.replace(/[^a-zA-Z0-9]/g, "").toLowerCase(); // Remove non-alphanumeric characters and lowercase
+    s = s.replace(/[^a-zA-Z0-9]/g, "").toLowerCase()
     if (s.length <= 1) {
-        return true;
+        return true
     }
     if (s[0] !== s[s.length - 1]) {
-        return false;
+        return false
     }
-    return isPalindrome(s.slice(1, -1));
+    return isPalindrome(s.slice(1, -1))
 }
 
